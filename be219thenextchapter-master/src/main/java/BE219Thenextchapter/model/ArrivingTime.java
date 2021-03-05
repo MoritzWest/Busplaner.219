@@ -1,0 +1,31 @@
+package BE219Thenextchapter.model;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.time.LocalTime;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@Entity
+public class ArrivingTime {
+
+    @Id
+    @GeneratedValue
+    private long id;
+    private LocalTime arrivingTime;
+
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    private BusStop busStop;
+
+    @OneToOne(mappedBy = "arrivingTimeEntry", cascade = CascadeType.ALL)
+    private BusPlan busPlan;
+
+    //Konstruktor
+    public ArrivingTime(LocalTime arrivingTime) {
+        this.arrivingTime = arrivalTime;
+    }
+}
