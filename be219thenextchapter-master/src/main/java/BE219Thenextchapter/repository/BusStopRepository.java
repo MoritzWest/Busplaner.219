@@ -17,6 +17,7 @@ public interface BusStopRepository extends JpaRepository<BusStop, Long> {
             " AND bsc.busLine.busLineId  = :param1")
     List<BusStop> findAllBusStopsByBusLineId(@Param("param1") long id);
 
+    List<BusStop> findAllBusStopsByBusRouteId(long busLineId);
 
 
     //JPQL Abfrage: Bei Eingabe einer konkreten Haltestelle werden alle Busse, die als nächstes an dem Tag die Haltestelle anfahren

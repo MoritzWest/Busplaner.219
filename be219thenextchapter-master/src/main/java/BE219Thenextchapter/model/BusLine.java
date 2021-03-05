@@ -37,7 +37,7 @@ public class BusLine {
 
     //Konstruktor
     public BusLine(int busRouteNumber, int frequency, LocalTime startTimeAtFirstStop, LocalTime endTimeAtFirstStop, BusStop startBusStop, BusStop endBusStop) {
-        this.busRouteNumber = busLineNumber;
+        this.busLineNumber = busLineNumber;
         this.frequency = frequency;
         this.startTimeAtFirstStop = startTimeAtFirstStop;
         this.endTimeAtFirstStop = endTimeAtFirstStop;

@@ -7,7 +7,7 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter //werden zur Laufzeit erstellt
+//werden zur Laufzeit erstellt
 @Setter
 @NoArgsConstructor //erstellt leeren Konstruktor
 

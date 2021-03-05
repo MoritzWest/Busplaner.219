@@ -26,6 +26,6 @@ public class ArrivingTime {
 
     //Konstruktor
     public ArrivingTime(LocalTime arrivingTime) {
-        this.arrivingTime = arrivalTime;
+        this.arrivingTime = arrivingTime;
     }
 }
