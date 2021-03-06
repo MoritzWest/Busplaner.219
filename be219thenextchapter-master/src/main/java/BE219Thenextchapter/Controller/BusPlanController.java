@@ -11,7 +11,7 @@ import java.util.List;
 public interface BusLineController {
 
     @GetMapping
-    List<BusLineDTO> getAllBusasLines();
+    List<BusLineDTO> getAllBusLines();
 
     @GetMapping("/{BusLinesId")
     BusLinesDTO getBusLineById(@PathVariable("busLineId") long busLineId);

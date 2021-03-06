@@ -47,7 +47,7 @@ public class BusPlan {
     private long id;
 
     private Timestamp startTimeAtFirstStop; // Timestamp: Tag/Std/Min  //raus?
-    private List<Timestamp> arrivalTime; //Liste mit den Ankunftszeiten der Bulinie an den versch. Haltestellen
+    private List<Timestamp> arrivalTime; //Liste mit den Ankunftszeiten der Buslinie an den versch. Haltestellen
     private List<BusStop> routeStops;
 
     @OneToOne(cascade = CascadeType.ALL)

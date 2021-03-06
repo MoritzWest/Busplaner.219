@@ -2,8 +2,8 @@ package BE219Thenextchapter;
 
 import BE219Thenextchapter.model.*;
 import BE219Thenextchapter.repository.*;
-import de.dhbw.ravensburg.wp.be219thenextchapter.model.*;
-import de.dhbw.ravensburg.wp.be219thenextchapter.repository.*;
+import be219thenextchapter.model.*;
+import be219thenextchapter.repository.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
