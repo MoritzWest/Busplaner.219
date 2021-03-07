@@ -1,8 +1,7 @@
-/*
-package de.dhbw.ravensburg.wp.be219thenextchapter.service;
+package BE219Thenextchapter.Service;
 
-import de.dhbw.ravensburg.wp.be219thenextchapter.dto.BusRouteDTO;
-import de.dhbw.ravensburg.wp.be219thenextchapter.dto.BusScheduleDTO;
+
+import BE219Thenextchapter.dto.BusPlanDTO;
 
 import java.util.List;
 
@@ -23,5 +22,3 @@ public interface BusPlanService {
 
 
 }
-
-*/

@@ -11,7 +11,7 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface BusLineMapper {
 
-    @Mapping(target = "busPlanIds", source = "busPlan")
+    @Mapping(target = "busPlanIds", source = "busPlans")
     BusLineDTO busRouteToBusLineDTO(BusLine busLine);
     List<BusLineDTO> busLineToBusLineDTOs(List<BusLine> busLines);
 

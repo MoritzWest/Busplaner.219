@@ -1,14 +1,9 @@
-/*
-package de.dhbw.ravensburg.wp.be219thenextchapter.service;
+package BE219Thenextchapter.Service;
 
-import de.dhbw.ravensburg.wp.be219thenextchapter.dto.BusRouteDTO;
-import de.dhbw.ravensburg.wp.be219thenextchapter.dto.BusScheduleDTO;
-import de.dhbw.ravensburg.wp.be219thenextchapter.mapper.BusRouteMapper;
-import de.dhbw.ravensburg.wp.be219thenextchapter.mapper.BusScheduleMapper;
-import de.dhbw.ravensburg.wp.be219thenextchapter.model.BusRoute;
-import de.dhbw.ravensburg.wp.be219thenextchapter.model.BusSchedule;
-import de.dhbw.ravensburg.wp.be219thenextchapter.repository.BusRouteRepository;
-import de.dhbw.ravensburg.wp.be219thenextchapter.repository.BusScheduleRepository;
+import BE219Thenextchapter.dto.BusPlanDTO;
+import BE219Thenextchapter.mapper.BusPlanMapper;
+import BE219Thenextchapter.model.BusPlan;
+import BE219Thenextchapter.repository.BusPlanRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -33,7 +28,7 @@ public class BusPlanServiceImpl implements BusPlanService{
 
     @Override
     public BusPlanDTO getBusPlanById(long id) {
-    BusPlan busPlan = this.busPlanRepository.findBusPlanById(id); //holt busLine Objekt aus der DB anhand der ID
+    BusPlan busPlan = this.busPlanRepository.findById(id).get(); //holt busLine Objekt aus der DB anhand der ID
     BusPlanDTO busPlanDTO = this.busPlanMapper.busPlanToBusPlanDTO(busPlan); // wandelt es in DTO um
     return busPlanDTO;
 }
@@ -59,4 +54,4 @@ public class BusPlanServiceImpl implements BusPlanService{
 
 
 }
-*/
+

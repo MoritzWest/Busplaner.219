@@ -1,9 +1,7 @@
-/*
-package de.dhbw.ravensburg.wp.be219thenextchapter.service;
 
-import de.dhbw.ravensburg.wp.be219thenextchapter.dto.BusRouteDTO;
-import de.dhbw.ravensburg.wp.be219thenextchapter.dto.BusStopDTO;
-import de.dhbw.ravensburg.wp.be219thenextchapter.model.BusStop;
+package BE219Thenextchapter.Service;
+
+import BE219Thenextchapter.dto.BusStopDTO;
 
 import java.util.List;
 
@@ -25,4 +23,3 @@ public interface BusStopService {
     void removeBusStopById(long id);
 
 }
-*/

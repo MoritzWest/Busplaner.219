@@ -1,23 +1,20 @@
-/*
-package de.dhbw.ravensburg.wp.be219thenextchapter.controller;
+package BE219Thenextchapter.Controller;
 
-import de.dhbw.ravensburg.wp.be219thenextchapter.dto.BusLineDTO;
-import de.dhbw.ravensburg.wp.be219thenextchapter.model.Bus;
-import de.dhbw.ravensburg.wp.be219thenextchapter.model.BusLine;
+import BE219Thenextchapter.dto.BusLineDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-public interface BusLineController {
+public interface BusPlanController {
 
     @GetMapping
     List<BusLineDTO> getAllBusLines();
 
     @GetMapping("/{BusLinesId")
-    BusLinesDTO getBusLineById(@PathVariable("busLineId") long busLineId);
+    BusLineDTO getBusLineById(@PathVariable("busLineId") long busLineId);
 
-    @PostMapping
-    BusScheduleDTO addBusLine(@RequestBody BusLineDTO busLineDTO);
+    //@PostMapping
+    //BusScheduleDTO addBusLine(@RequestBody BusLineDTO busLineDTO);
 
     @PutMapping
     BusLineDTO updateBusLine(@RequestBody BusLineDTO busLineDTO);
@@ -26,4 +23,3 @@ public interface BusLineController {
     void removeBusLineById(@PathVariable("busLineId") long busLineId);
 
 }
-*/

@@ -1,4 +1,3 @@
-
 package BE219Thenextchapter.Controller;
 
 import org.springframework.beans.factory.annotation.Autowired;

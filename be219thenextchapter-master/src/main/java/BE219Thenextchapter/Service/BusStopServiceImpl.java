@@ -1,12 +1,10 @@
-/*
-package de.dhbw.ravensburg.wp.be219thenextchapter.service;
 
-import de.dhbw.ravensburg.wp.be219thenextchapter.dto.BusRouteDTO;
-import de.dhbw.ravensburg.wp.be219thenextchapter.dto.BusStopDTO;
-import de.dhbw.ravensburg.wp.be219thenextchapter.mapper.BusStopMapper;
-import de.dhbw.ravensburg.wp.be219thenextchapter.model.BusRoute;
-import de.dhbw.ravensburg.wp.be219thenextchapter.model.BusStop;
-import de.dhbw.ravensburg.wp.be219thenextchapter.repository.BusStopRepository;
+package BE219Thenextchapter.Service;
+
+import BE219Thenextchapter.dto.BusStopDTO;
+import BE219Thenextchapter.mapper.BusStopMapper;
+import BE219Thenextchapter.model.BusStop;
+import BE219Thenextchapter.repository.BusStopRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -65,4 +63,3 @@ public class BusStopServiceImpl implements BusStopService{
         this.busStopRepository.deleteById(id);
     }
 }
-*/

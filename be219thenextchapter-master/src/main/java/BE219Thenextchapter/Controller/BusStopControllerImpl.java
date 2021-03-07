@@ -1,9 +1,7 @@
-/*
-package de.dhbw.ravensburg.wp.be219thenextchapter.controller;
+package BE219Thenextchapter.Controller;
 
-import de.dhbw.ravensburg.wp.be219thenextchapter.dto.BusStopDTO;
-import de.dhbw.ravensburg.wp.be219thenextchapter.service.BusStopService;
-import org.springframework.stereotype.Controller;
+import BE219Thenextchapter.Service.BusStopService;
+import BE219Thenextchapter.dto.BusStopDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -59,4 +57,4 @@ public class BusStopControllerImpl implements BusStopController{
         this.busStopService.removeBusStopById(busStopId);
     }
 }
-*/
+

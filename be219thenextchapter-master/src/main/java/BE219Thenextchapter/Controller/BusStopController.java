@@ -1,7 +1,7 @@
-/*
-package de.dhbw.ravensburg.wp.be219thenextchapter.controller;
+package BE219Thenextchapter.Controller;
 
-import de.dhbw.ravensburg.wp.be219thenextchapter.dto.BusStopDTO;
+
+import BE219Thenextchapter.dto.BusStopDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,4 +30,3 @@ public interface BusStopController {
 
 
 }
-*/

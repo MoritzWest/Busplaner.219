@@ -13,7 +13,7 @@ import java.util.List;
 public interface BusMapper {
 
    //die Ids der BusLinien werden in die Variable BusRouteIds geschrieben -> mapping
-    @Mapping(target = "busLineIds", source = "busLines") //Ids aus source werden auf target also DTO gemapped, target kommt aus DTO, source aus model
+    //@Mapping(target = "busIds", source = "busPlans") //Ids aus source werden auf target also DTO gemapped, target kommt aus DTO, source aus model
     BusDTO busToBusDTO(Bus bus);
     List<BusDTO> bussesToBusDTOs(List<Bus> busses);
 

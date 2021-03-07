@@ -1,10 +1,10 @@
-
 package BE219Thenextchapter.Controller;
 
 import BE219Thenextchapter.dto.BusDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 
 public interface BusController {
 
