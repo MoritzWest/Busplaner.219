@@ -34,7 +34,7 @@ public class BusStopServiceImpl implements BusStopService{
     //Read by Id
     @Override
     public BusStopDTO getBusStopById(long id) {
-        BusStop busStop = this.busStopRepository.findBusStopById(id);
+        BusStop busStop = this.busStopRepository.findById(id).get();
         BusStopDTO busStopDTO = this.busStopMapper.busStopToBusStopDTO(busStop);
         return busStopDTO;
     }

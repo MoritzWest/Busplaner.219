@@ -10,6 +10,7 @@ import java.util.List;
 
 @Repository
 public interface BusStopRepository extends JpaRepository<BusStop, Long> {
+    /*
     BusStop findBusStopById(long id);
 
     //Gibt zu einer Buslinie die Haltestellen zurück
@@ -30,5 +31,6 @@ public interface BusStopRepository extends JpaRepository<BusStop, Long> {
     //abgeleitete Abfrage!!
 
    // @Query("SELECT FROM BusStop s WHERE s.Id = :param1 AND s.BusLine.BusSchedule ") //bei from hinschr. von welchen models
+
 
 }

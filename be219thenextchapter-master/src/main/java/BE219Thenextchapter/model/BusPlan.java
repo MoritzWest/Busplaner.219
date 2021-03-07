@@ -1,5 +1,6 @@
 package BE219Thenextchapter.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,9 +19,13 @@ public class BusPlan {
 
     //Jeder Busfahrplan ist einer Buslinie zugeordnet
     @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "busLine")
+    @JsonIgnoreProperties("busPlans")
     private BusLine busLine;
 
     @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "bus")
+    @JsonIgnoreProperties("busPlans")
     private Bus bus;
 
     @OneToOne(cascade = CascadeType.ALL)
