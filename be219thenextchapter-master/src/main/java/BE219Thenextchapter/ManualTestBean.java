@@ -83,6 +83,7 @@ public class ManualTestBean {
       //  this.arrivalTimeRepository.saveAll(Arrays.asList(arrivalTime_1, arrivalTime_2, arrivalTime_3));
         //this.busScheduleRepository.saveAll(Arrays.asList(busSchedule_1, busSchedule_2, busSchedule_3));
        // this.busRepository.saveAll(Arrays.asList(bus_1, bus_2, bus_3));
+        busPlanRepository.saveAll(Arrays.asList(busPlan_1,busPlan_2,busPlan_3));
 
 
 
