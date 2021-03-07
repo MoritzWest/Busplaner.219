@@ -7,13 +7,14 @@ import lombok.Setter;
 import java.util.List;
 
 @Setter
+@Getter
 @NoArgsConstructor
 public class BusDTO {
 
-    private long id;
+    private Long id;
     private List<Long> busPlanIds;
 
-    public BusDTO(long id, List<Long> busPlanIds) {
+    public BusDTO(Long id, List<Long> busPlanIds) {
         this.id = id;
         this.busPlanIds = busPlanIds;
     }

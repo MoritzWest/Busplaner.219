@@ -24,7 +24,7 @@ public class BusServiceImpl implements BusService{
     @Override
     public List<BusDTO> getAll() {
         List<Bus> busses = this.busRepository.findAll(); //liefert alle Buslinien aus der DB
-        List<BusDTO> busDTOS = this.busMapper.bussesToBusDTOs(busses); // wandelt erste liste in eine liste von dtos um
+        List<BusDTO> busDTOS = this.busMapper.busToBusDTOs(busses); // wandelt erste liste in eine liste von dtos um
         return busDTOS;
     }
 
@@ -47,6 +47,13 @@ public class BusServiceImpl implements BusService{
     }
 
     //Update
+//    String customerTypName = customerDTO.getCustomerTypName();
+//    CustomerTyp customerTyp = customerTypRepository.findByCustomerTypEquals(customerTypName);
+//    Customer tmp = customerMapper.customerDTOtoCustomer(customerDTO);
+//tmp.setCustomerTyp(customerTyp);
+//tmp.setPowerMeters(getPowerMeterRepository().findByCustomerId(tmp.getId()));
+//customerRepository.save(tmp);
+//return customerMapper.customerToCustomerDTO(tmp);
     @Override
     public BusDTO updateBus(BusDTO busDTO) { //dieses DTO besitzt schon eine Id, daran erkennt das Repsitory dass es schon existert und geuptdated werdem muss
         Bus bus = this.busMapper.busDTOToBus(busDTO);

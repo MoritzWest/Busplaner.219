@@ -14,7 +14,7 @@ import java.util.List;
 public class Bus {
     @Id
     @GeneratedValue
-    private long id;
+    private Long id;
 
     //Ein Bus kann mehrere Buslinien fahren / besitzt mehrere Fahrpläne
     @OneToMany(mappedBy = "bus", cascade = CascadeType.PERSIST) //->erstmal egal was man da reinschreibt, mind. persist damit wir die Objekte auch speichern können,geht auch all

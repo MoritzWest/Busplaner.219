@@ -13,16 +13,17 @@ public class BusStopDTO {
 
     private long id;
     private String street;
-    private BusLineDTO startBusStop;
-    private BusLineDTO endBusStop;
+    private List<BusLineDTO> busLineStarts;
+    private List<BusLineDTO> busLineEnds;
     private List<ArrivingTimeDTO> arrivingTimes;
 
 
-    public BusStopDTO(long id, String street, BusLineDTO startBusStop, BusLineDTO endBusStop, List<ArrivingTimeDTO> arrivingTimes) {
+
+    public BusStopDTO(long id, String street, List<BusLineDTO> busLineStarts, List<BusLineDTO> busLineEnds, List<ArrivingTimeDTO> arrivingTimes) {
         this.id = id;
         this.street = street;
-        this.startBusStop = startBusStop;
-        this.endBusStop = endBusStop;
+        this.busLineStarts = busLineStarts;
+        this.busLineEnds = busLineEnds;
         this.arrivingTimes = arrivingTimes;
     }
 }
