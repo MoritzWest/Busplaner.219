@@ -7,22 +7,23 @@ import lombok.Setter;
 import java.util.List;
 
 @Setter
+@Getter
 @NoArgsConstructor
 public class BusStopDTO {
 
     private long id;
     private String street;
-    private List<Long> busLineStartIds;
-    private List<Long> busLineEndIds;
-    private List<Long> arrivingTimeIds;
+    private BusLineDTO startBusStop;
+    private BusLineDTO endBusStop;
+    private List<ArrivingTimeDTO> arrivingTimes;
 
 
-    public BusStopDTO(long id, String street, List<Long> busLineStartIds, List<Long> busLineEndIds, List<Long> arrivalTimeIds) {
+    public BusStopDTO(long id, String street, BusLineDTO startBusStop, BusLineDTO endBusStop, List<ArrivingTimeDTO> arrivingTimes) {
         this.id = id;
         this.street = street;
-        this.busLineStartIds = busLineStartIds;
-        this.busLineEndIds = busLineEndIds;
-        this.arrivingTimeIds = arrivingTimeIds;
+        this.startBusStop = startBusStop;
+        this.endBusStop = endBusStop;
+        this.arrivingTimes = arrivingTimes;
     }
 }
 
