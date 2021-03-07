@@ -4,6 +4,7 @@ package BE219Thenextchapter.Controller;
 import BE219Thenextchapter.dto.BusStopDTO;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 public interface BusStopController {
@@ -20,8 +21,8 @@ public interface BusStopController {
     BusStopDTO addBusStop(@RequestBody BusStopDTO busStopDTO);
 
     //Update
-    @PutMapping
-    BusStopDTO updateBusStop(@RequestBody BusStopDTO busStopDTO);
+    @PutMapping("/busStopId")
+    BusStopDTO updateBusStop(@PathVariable("busStopId") long busStopId, @Valid @RequestBody BusStopDTO busStopDTO);
 
     //Delete
     @DeleteMapping("{/BusStopId")

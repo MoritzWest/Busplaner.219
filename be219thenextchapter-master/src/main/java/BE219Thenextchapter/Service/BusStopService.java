@@ -17,7 +17,7 @@ public interface BusStopService {
     BusStopDTO addBusStop(BusStopDTO busStopDTO); // bekommt ein BusStop DTO ohne Id und gibt ein BusStopDTO mit Id zurück
 
     //Update
-    BusStopDTO updateBusStop(BusStopDTO busStopDTO); //eigentlich genauso wie Create, nur das schon eine Id da ist, über die das upzudatende Objekt ident. wird
+    BusStopDTO updateBusStop(long busStopId, BusStopDTO busStopDTO); //eigentlich genauso wie Create, nur das schon eine Id da ist, über die das upzudatende Objekt ident. wird
 
     //Delete
     void removeBusStopById(long id);
