@@ -21,7 +21,7 @@ public class BusLineDTO {
     private BusStop endBusStop;
     private List<Long> busPlanIds;
 
-    public BusLineDTO(long busRouteId, int busRouteNumber, int frequency, BusStop startBusStopId, long busPlan, BusStop endBusStop, List<Long> busPlanIds) {
+    public BusLineDTO(long busLineId, int busLineNumber, int frequency, BusStop startBusStopId, long busPlan, BusStop endBusStop, List<Long> busPlanIds) {
         this.busLineId = busLineId;
         this.busLineNumber = busLineNumber;
         this.frequency = frequency;

@@ -1,25 +1,26 @@
 
 package BE219Thenextchapter.Controller;
 
+import BE219Thenextchapter.dto.BusLineDTO;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 public interface BusLineController {
 
-   /* @GetMapping
-    List<BusLineDTO> getAllBusLines();
+    @GetMapping
+    List<BusLineDTO> getAllBusLines(); // gibt sämtliche Buslinien zurück
 
-    @GetMapping("/{busLinesId}")
-    BusLineDTO getBusLineById(@PathVariable("busLineId") long busLineId);
+    @GetMapping("/{busLineId}")
+    BusLineDTO getBusLineById(@PathVariable("busLineId") long busLineId); // gibt die Daten einer bestimmten Buslinie zurück
 
     @PostMapping
-    BusLineDTO addBusLine(@RequestBody BusLineDTO busLineDTO); // erwartet ein DTO im Bodybereich der Abfrage
+    BusLineDTO addBusLine(@RequestBody BusLineDTO busLineDTO); // fügt eine neu Buslinie hinzu
 
-    @PutMapping
-    BusLineDTO updateBusLine(@RequestBody BusLineDTO busLineDTO); //macht ja das gleiche siehe Service
+    @PutMapping("/{busLineId}")
+    BusLineDTO updateBusLine(@PathVariable("busLineId") long busLineId, @RequestBody BusLineDTO busLineDTO); //überschreibt Werte einer vorhandenen Buslinie
 
     @DeleteMapping("/{busLineId}")
-    void removeBusLineById(@PathVariable("busLineId") long busLineId); //gibt nichts zrk.
-*/
-
+    void removeBusLineById(@PathVariable("busLineId") long busLineId); //Löscht eine Buslinie ohne etwas zurück zu geben.
 }
 

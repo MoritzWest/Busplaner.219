@@ -12,8 +12,8 @@ import java.util.List;
 public interface BusLineMapper {
 
     @Mapping(target = "busPlanIds", source = "busPlans")
-    BusLineDTO busRouteToBusLineDTO(BusLine busLine);
-    List<BusLineDTO> busLineToBusLineDTOs(List<BusLine> busLines);
+    BusLineDTO busLineToBusLineDTO(BusLine busLine);
+    List<BusLineDTO> busLinesToBusLineDTOs(List<BusLine> busLines);
 
     BusLine busLineDTOToBusLine(BusLineDTO busLineDTO);
     List<BusLine> busLineDTOsToBusLine(List<BusLineDTO> busLineDTOS);
