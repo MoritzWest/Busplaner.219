@@ -12,17 +12,16 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface BusMapper {
 
-   //die Ids der BusLinien werden in die Variable BusRouteIds geschrieben -> mapping
-    //@Mapping(target = "busIds", source = "busPlans") //Ids aus source werden auf target also DTO gemapped, target kommt aus DTO, source aus model
+    @Mapping(target = "busPlanIds", source = "busPlans")
     BusDTO busToBusDTO(Bus bus);
-    List<BusDTO> bussesToBusDTOs(List<Bus> busses);
 
-    Bus busDTOToBus (BusDTO busDTO);
-    List<Bus> busDTOsToBusses (List<BusDTO> busDTOs);
+    List<BusDTO> busToBusDTOs(List<Bus> bus);
 
-    //holt die Ids des Busfahrplans
-    default Long map(BusPlan busPlan){
+    Bus busDTOToBus(BusDTO busDTO);
+
+    List<Bus> busDTOsToBus(List<BusDTO> busDTOS);
+
+    default Long map(BusPlan busPlan) {
         return busPlan.getId();
-     }
-
+    }
 }
