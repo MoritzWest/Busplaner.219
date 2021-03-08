@@ -3,9 +3,6 @@ package BE219Thenextchapter.Controller;
 
 import BE219Thenextchapter.dto.BusDTO;
 import BE219Thenextchapter.Service.BusService;
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.Setter;
 import org.springframework.web.bind.annotation.*;
 
@@ -55,13 +52,6 @@ public class BusControllerImpl implements BusController {
 
     //Delete
     @Override
-    @Operation(summary = "Deletes certain Bus.", description = "This operation " +
-            "deletes data of a certain Bus corresponding to an ID.")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Bus successfully deleted"),
-            @ApiResponse(responseCode = "404", description = "Given BusId does not exist"),
-            @ApiResponse(responseCode = "500", description = "An error occurred during processing")
-    })
     @DeleteMapping("/{busId}")
     public void removeBusById(@PathVariable("busId") long busId) {
         this.busService.removeBusById(busId);
