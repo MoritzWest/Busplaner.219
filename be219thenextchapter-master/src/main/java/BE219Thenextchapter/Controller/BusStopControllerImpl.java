@@ -20,7 +20,7 @@ public class BusStopControllerImpl implements BusStopController{
 
     private BusStopService busStopService;
 
-    //Konstruktor
+
     public BusStopControllerImpl (BusStopService busStopService){
         this.busStopService = busStopService;
     }
