@@ -26,25 +26,12 @@ public class BusControllerImpl implements BusController {
 
     //Read
     @Override
-    @Operation(summary = "Returns all Busses.", description = "This operation " +
-            "returns all Busses existing in the database.")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "All Busses returned successfully"),
-            @ApiResponse(responseCode = "500", description = "An error occurred during processing")
-    })
     @GetMapping
     public List<BusDTO> getAllBusses() {
         return this.busService.getAll();
     }
 
     @Override
-    @Operation(summary = "Returns certain Bus.", description = "This operation " +
-            "returns a Bus corresponding to an ID.")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Bus returned successfully"),
-            @ApiResponse(responseCode = "404", description = "Given BusID does not exist"),
-            @ApiResponse(responseCode = "500", description = "An error occurred during processing")
-    })
     @GetMapping("/{busId}")
     public BusDTO getBusById(@PathVariable("busId") long busId) {
         return this.busService.getBusById(busId);
@@ -52,13 +39,6 @@ public class BusControllerImpl implements BusController {
 
     //Create
     @Override
-    @Operation(summary = "Adds new Bus.", description = "This operation " +
-            "adds a new Bus to the database.")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Bus returned successfully"),
-            @ApiResponse(responseCode = "400", description = "Bus details are invalid"),
-            @ApiResponse(responseCode = "500", description = "An error occurred during processing")
-    })
     @PostMapping
     public BusDTO addBus(@Valid @RequestBody BusDTO busDTO) {
         return this.busService.addBus(busDTO);
@@ -66,14 +46,6 @@ public class BusControllerImpl implements BusController {
 
     //Update
     @Override
-    @Operation(summary = "Updates certain Bus.", description = "This operation " +
-            "updates data of a certain Bus corresponding to an ID.")
-    @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Bus returned successfully"),
-            @ApiResponse(responseCode = "400", description = "Bus details are invalid"),
-            @ApiResponse(responseCode = "404", description = "Given Bus does not exist"),
-            @ApiResponse(responseCode = "500", description = "An error occurred during processing")
-    })
     @PutMapping("/{busId}")
     public BusDTO updateBus(@Valid @RequestBody BusDTO busDTO,
                             @PathVariable("busId") Long busId) {
