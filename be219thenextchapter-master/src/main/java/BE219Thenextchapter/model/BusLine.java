@@ -14,14 +14,15 @@ import java.util.List;
 @Entity
 public class BusLine {
 
+    // Liste Haltestellen, Liste Busse, Taktfrequenz, Fahrplan
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long busLineId;
     private int busLineNumber;
     private int frequency;
-    private LocalTime startTimeAtFirstStop;
-    private LocalTime endTimeAtFirstStop;
+    private LocalTime startTimeAtFirstStop; //wann die Buslinie an der ersten Haltestelle losfährt an dem Tag
+    private LocalTime endTimeAtFirstStop; //Zeitintervall in dem eine Buslinie die Haltestellen bedient
 
     @ManyToOne( cascade = CascadeType.ALL)
     private BusStop startBusStop;
@@ -31,10 +32,10 @@ public class BusLine {
 
 
     //Jede Buslinie hat einen Busfahrplan
-    @OneToMany(mappedBy = "busLine", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "busLine", cascade = CascadeType.ALL) //haben hier bei movie das mappedBy stehen, d.h. in dem Fall ist der Soundtrack der Eigner, nicht der Movie
     private List<BusPlan> busPlans;
 
-
+    //Konstruktor
     public BusLine(int busLineNumber, int frequency, LocalTime startTimeAtFirstStop, LocalTime endTimeAtFirstStop, BusStop startBusStop, BusStop endBusStop) {
         this.busLineNumber = busLineNumber;
         this.frequency = frequency;

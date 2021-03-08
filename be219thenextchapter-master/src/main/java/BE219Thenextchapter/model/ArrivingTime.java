@@ -24,7 +24,7 @@ public class ArrivingTime {
     @OneToOne(mappedBy = "arrivingTimeEntry", cascade = CascadeType.ALL)
     private BusPlan busPlan;
 
-
+    //Konstruktor
     public ArrivingTime(LocalTime arrivingTime) {
         this.arrivingTime = arrivingTime;
     }

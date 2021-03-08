@@ -29,7 +29,7 @@ public class BusStop {
     @OneToMany(mappedBy = "busStop", cascade = CascadeType.ALL) //Tabellendef:Bushaltestelle ist der Eigner der Beziehung mit BusRoute
     private List<ArrivingTime> arrivingTimes;
 
-
+    //Konstruktor
     public BusStop (String street){
         this.street = street;
  }

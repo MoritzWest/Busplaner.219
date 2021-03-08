@@ -11,14 +11,17 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface BusPlanMapper {
 
-
+    //@Mapping(target = "busPlanIds", source = "busPlans")
     BusPlanDTO busPlanToBusPlanDTO(BusPlan busPlan);
     List<BusPlanDTO> busPlanToBusPlanDTOs(List<BusPlan> busPlan);
 
     BusPlan busPlanDTOToBusPlan(BusPlanDTO busPlanDTO);
     List<BusPlan> busPlanDTOsToBusPlan(List<BusPlanDTO> busPlanDTOS);
 
-
+//    default Long map(BusPlan busPlan) {
+//        return busPlan.getId();
+//    }
+//
 
 
 }

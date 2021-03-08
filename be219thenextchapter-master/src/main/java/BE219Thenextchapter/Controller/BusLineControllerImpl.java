@@ -20,7 +20,7 @@ public class BusLineControllerImpl implements BusLineController {
 
     private BusLineService busLineService;
 
-
+    //Konstruktor
     public BusLineControllerImpl(BusLineService busLineService) {
         this.busLineService = busLineService;
     }

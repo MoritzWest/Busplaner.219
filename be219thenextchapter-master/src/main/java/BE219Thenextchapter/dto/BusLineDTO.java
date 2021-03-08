@@ -9,10 +9,10 @@ import lombok.Setter;
 import java.time.LocalTime;
 import java.util.List;
 
-
+//werden zur Laufzeit erstellt
 @Setter
 @Getter
-@NoArgsConstructor
+@NoArgsConstructor //erstellt leeren Konstruktor
 
 public class BusLineDTO {
 

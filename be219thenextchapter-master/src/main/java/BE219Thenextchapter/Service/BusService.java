@@ -13,7 +13,7 @@ public interface BusService {
     BusDTO getBusById(long id);
 
     //Create
-    BusDTO addBus(BusDTO busDTO) ;
+    BusDTO addBus(BusDTO busDTO) ; //bekommt DTO wird mit Mapper in Objekt umgew. und gespeichert
 
     //Update
     BusDTO updateBus(BusDTO busDTO);
