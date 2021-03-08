@@ -16,8 +16,8 @@ public class Bus {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    //Ein Bus kann mehrere Buslinien fahren / besitzt mehrere Fahrpläne
-    @OneToMany(mappedBy = "bus", cascade = CascadeType.PERSIST) //->erstmal egal was man da reinschreibt, mind. persist damit wir die Objekte auch speichern können,geht auch all
-    private List<BusPlan> busPlans; //das Attribut involvedcast ist das Gegenstück auf der Movieseite?
+    //Ein Bus kann mehrere Buslinien fahren und besitzt mehrere Fahrpläne
+    @OneToMany(mappedBy = "bus", cascade = CascadeType.PERSIST)
+    private List<BusPlan> busPlans;
 
 }

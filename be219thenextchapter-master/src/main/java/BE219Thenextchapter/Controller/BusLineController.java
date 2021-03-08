@@ -10,18 +10,18 @@ public interface BusLineController {
 
     //TODO
     @GetMapping
-    List<BusLineDTO> getAllBusLines(); // gibt sämtliche Buslinien zurück
+    List<BusLineDTO> getAllBusLines();
 
     @GetMapping("/{busLineId}")
-    BusLineDTO getBusLineById(@PathVariable("busLineId") long busLineId); // gibt die Daten einer bestimmten Buslinie zurück
+    BusLineDTO getBusLineById(@PathVariable("busLineId") long busLineId);
 
     @PostMapping
-    BusLineDTO addBusLine(@RequestBody BusLineDTO busLineDTO); // fügt eine neu Buslinie hinzu
+    BusLineDTO addBusLine(@RequestBody BusLineDTO busLineDTO);
 
     @PutMapping("/{busLineId}")
-    BusLineDTO updateBusLine(@PathVariable("busLineId") long busLineId, @RequestBody BusLineDTO busLineDTO); //überschreibt Werte einer vorhandenen Buslinie
+    BusLineDTO updateBusLine(@PathVariable("busLineId") long busLineId, @RequestBody BusLineDTO busLineDTO);
 
     @DeleteMapping("/{busLineId}")
-    void removeBusLineById(@PathVariable("busLineId") long busLineId); //Löscht eine Buslinie ohne etwas zurück zu geben.
+    void removeBusLineById(@PathVariable("busLineId") long busLineId);
 }
 

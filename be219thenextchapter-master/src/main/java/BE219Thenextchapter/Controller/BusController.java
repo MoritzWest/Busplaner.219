@@ -4,7 +4,6 @@ import BE219Thenextchapter.dto.BusDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-//test
 
 public interface BusController {
 
@@ -17,16 +16,15 @@ public interface BusController {
 
     //Create
     @PostMapping
-    BusDTO addBus(@RequestBody BusDTO busDTO); // erwartet ein DTO im BOdy bereich der Abfrage
+    BusDTO addBus(@RequestBody BusDTO busDTO);
 
-    //TODO fehlt noch
     //Update
     @PutMapping
     BusDTO updateBus(@RequestBody BusDTO busDTO,
-                     @PathVariable("busId") Long busId); //macht ja das gleiche siehe Service
+                     @PathVariable("busId") Long busId);
 
     //Delete
     @DeleteMapping("/{busId}")
-    void removeBusById(@PathVariable("busId") long busId); //gibt nichts zrk.
+    void removeBusById(@PathVariable("busId") long busId);
 }
 
