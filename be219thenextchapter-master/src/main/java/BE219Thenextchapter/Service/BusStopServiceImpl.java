@@ -28,7 +28,7 @@ public class BusStopServiceImpl implements BusStopService{
     @Override
     public List<BusStopDTO> getAll() {
         List<BusStop> busStops = this.busStopRepository.findAll();
-        List<BusStopDTO> busStopDTOS = this.busStopMapper.busStopsToBusStopDTOs(busStops); //übergibt die darüber angelegte busStop Liste an die Methode im Mapper
+        List<BusStopDTO> busStopDTOS = this.busStopMapper.busStopsToBusStopDTOs(busStops);
         return busStopDTOS;
     }
 
@@ -61,7 +61,7 @@ public class BusStopServiceImpl implements BusStopService{
         BusStop busStop = this.busStopMapper.busStopDTOToBusStop(busStopDTO);
         busStop.setId(busStopId);
         this.busStopRepository.save(busStop);
-        return this.busStopMapper.busStopToBusStopDTO(busStop); //Umwandlung und Rückgabe des Objekts in DTO über die Mapper-Methode
+        return this.busStopMapper.busStopToBusStopDTO(busStop);
         }
 
 

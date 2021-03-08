@@ -15,15 +15,8 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface BusMapper {
 @Mapping(target = "busPlanIds", source = "busPlans")
-   // @Mapping(target = "busPlanIds", source = "busPlans")
-   /* BusDTO busToBusDTO(Bus bus);
 
-    List<BusDTO> busToBusDTOs(List<Bus> bus);
 
-    Bus busDTOToBus(BusDTO busDTO);
-
-    List<Bus> busDTOsToBus(List<BusDTO> busDTOS);
- */
     default List<Long> map(List<BusPlan> BusPlan) {
         List<Long> Result = new ArrayList<>();
       if(BusPlan!=null){
