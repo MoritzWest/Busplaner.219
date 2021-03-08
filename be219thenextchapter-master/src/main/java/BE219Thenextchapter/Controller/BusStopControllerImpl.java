@@ -96,10 +96,10 @@ public class BusStopControllerImpl implements BusStopController{
 
     //Delete
     @Override
-    @Operation(summary = "Updates certain busStop.", description = "This operation " +
-            "updates data of a certain busStop corresponding to an ID.")
+    @Operation(summary = "Deletes certain busStop.", description = "This operation " +
+            "deletes data of a certain busStop corresponding to an ID.")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "BusStop returned successfully"),
+            @ApiResponse(responseCode = "200", description = "BusStop successfully deleted"),
             @ApiResponse(responseCode = "404", description = "Given busStopId does not exist"),
             @ApiResponse(responseCode = "500", description = "An error occurred during processing")
     })
