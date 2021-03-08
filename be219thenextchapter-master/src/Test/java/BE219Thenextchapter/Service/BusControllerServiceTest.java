@@ -26,9 +26,8 @@ import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.when;
 
 /**
- * @Author
+ * @Author Stefanie Grösch and Moritz Westhäußer
  */
-
 @SpringBootTest
 public class BusControllerServiceTest {
 

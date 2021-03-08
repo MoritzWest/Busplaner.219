@@ -7,6 +7,10 @@ import org.mapstruct.Mapper;
 
 import java.util.List;
 
+/**
+ * @Author Moritz Westhäußer
+ */
+
 @Mapper(componentModel = "spring")
 public interface BusStopMapper {
 

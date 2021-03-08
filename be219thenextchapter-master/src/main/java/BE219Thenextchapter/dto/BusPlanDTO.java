@@ -6,6 +6,9 @@ import BE219Thenextchapter.model.BusLine;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+/**
+ * @Author Stefanie Grösch
+ */
 
 @Setter
 @NoArgsConstructor

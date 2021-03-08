@@ -8,6 +8,10 @@ import org.mapstruct.Mapping;
 
 import java.util.List;
 
+/**
+ * @Author Moritz Westhäußer
+ */
+
 @Mapper(componentModel = "spring")
 public interface BusLineMapper {
 

@@ -8,7 +8,9 @@ import BE219Thenextchapter.model.Bus;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+/**
+ * @Author Stefanie Grösch
+ */
 @Service
 public class BusServiceImpl implements BusService{
 

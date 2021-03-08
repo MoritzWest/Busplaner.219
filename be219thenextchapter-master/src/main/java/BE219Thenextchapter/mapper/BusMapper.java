@@ -10,7 +10,9 @@ import org.mapstruct.Mapping;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * @Author Stefanie Grösch
+ */
 
 @Mapper(componentModel = "spring")
 public interface BusMapper {

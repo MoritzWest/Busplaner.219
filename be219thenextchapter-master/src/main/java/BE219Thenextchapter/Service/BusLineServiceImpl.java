@@ -9,7 +9,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.NoSuchElementException;
-
+/**
+ * @Author Moritz Westhäußer
+ */
 @Service
 public class BusLineServiceImpl implements BusLineService {
 

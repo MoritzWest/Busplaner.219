@@ -12,6 +12,10 @@ import java.util.Arrays;
 import java.util.List;
 //test
 
+/**
+ * @Author Stefanie Grösch and Moritz Westhäußer
+ */
+
 @Component
 @Slf4j
 public class ManualTestBean {

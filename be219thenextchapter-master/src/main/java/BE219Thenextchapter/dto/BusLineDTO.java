@@ -8,11 +8,13 @@ import lombok.Setter;
 
 import java.time.LocalTime;
 import java.util.List;
+/**
+ * @Author Moritz Westhäußer
+ */
 
-//werden zur Laufzeit erstellt
 @Setter
 @Getter
-@NoArgsConstructor //erstellt leeren Konstruktor
+@NoArgsConstructor
 
 public class BusLineDTO {
 

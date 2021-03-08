@@ -14,6 +14,10 @@ import javax.validation.ConstraintViolationException;
 import javax.validation.Valid;
 import java.util.List;
 
+/**
+ * @Author Moritz Westhäußer
+ */
+
 @RestController
 @RequestMapping("/api/v1/busLines") //Plural bei busLines
 public class BusLineControllerImpl implements BusLineController {

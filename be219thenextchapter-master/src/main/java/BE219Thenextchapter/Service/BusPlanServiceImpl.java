@@ -7,7 +7,9 @@ import BE219Thenextchapter.repository.BusPlanRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+/**
+ * @Author Stefanie Grösch
+ */
 @Service
 public class BusPlanServiceImpl implements BusPlanService{
 

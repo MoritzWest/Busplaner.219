@@ -13,6 +13,9 @@ import javax.persistence.EntityNotFoundException;
 import javax.validation.ConstraintViolationException;
 import java.util.List;
 
+/**
+ * @Author Moritz Westhäußer
+ */
 
 @RestController
 @RequestMapping("/api/v1/busStops")

@@ -4,7 +4,9 @@ package BE219Thenextchapter.Service;
 import BE219Thenextchapter.dto.BusPlanDTO;
 
 import java.util.List;
-
+/**
+ * @Author Stefanie Grösch
+ */
 public interface BusPlanService {
 
     //Read

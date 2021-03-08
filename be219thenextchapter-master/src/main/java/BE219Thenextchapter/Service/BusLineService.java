@@ -4,7 +4,9 @@ import BE219Thenextchapter.dto.BusLineDTO;
 import BE219Thenextchapter.model.BusLine;
 
 import java.util.List;
-
+/**
+ * @Author Moritz Westhäußer
+ */
 public interface BusLineService {
 
     //Read

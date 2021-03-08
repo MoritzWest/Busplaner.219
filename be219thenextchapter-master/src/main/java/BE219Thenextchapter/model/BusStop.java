@@ -9,6 +9,10 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.*;
 import java.util.List;
 
+/**
+ * @Author Moritz Westhäußer
+ */
+
 @Getter
 @Setter
 @NoArgsConstructor

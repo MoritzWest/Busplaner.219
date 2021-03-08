@@ -7,6 +7,10 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+/**
+ * @Author Stefanie Grösch
+ */
+
 @Getter
 @Setter
 @NoArgsConstructor

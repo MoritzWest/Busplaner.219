@@ -6,6 +6,10 @@ import lombok.Setter;
 
 import java.util.List;
 
+/**
+ * @Author Stefanie Grösch
+ */
+
 @Setter
 @Getter
 @NoArgsConstructor

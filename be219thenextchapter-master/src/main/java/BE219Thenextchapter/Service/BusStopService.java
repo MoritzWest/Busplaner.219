@@ -4,7 +4,9 @@ package BE219Thenextchapter.Service;
 import BE219Thenextchapter.dto.BusStopDTO;
 
 import java.util.List;
-
+/**
+ * @Author Moritz Westhäußer
+ */
 public interface BusStopService {
 
     //Anlegen der CRUD-Methoden

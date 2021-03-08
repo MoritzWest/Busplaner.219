@@ -5,7 +5,9 @@ import BE219Thenextchapter.dto.BusPlanDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+/**
+ * @Author Stefanie Grösch
+ */
 public interface BusPlanController {
 
     //TODO

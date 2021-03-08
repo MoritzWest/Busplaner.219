@@ -4,7 +4,10 @@ import BE219Thenextchapter.dto.BusDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-//test
+
+/**
+ * @Author Stefanie Grösch
+ */
 
 public interface BusController {
 
@@ -19,7 +22,7 @@ public interface BusController {
     @PostMapping
     BusDTO addBus(@RequestBody BusDTO busDTO); // erwartet ein DTO im BOdy bereich der Abfrage
 
-    //TODO fehlt noch
+
     //Update
     @PutMapping
     BusDTO updateBus(@RequestBody BusDTO busDTO,
