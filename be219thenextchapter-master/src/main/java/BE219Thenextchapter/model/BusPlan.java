@@ -14,7 +14,7 @@ import javax.persistence.*;
 public class BusPlan {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     //Jeder Busfahrplan ist einer Buslinie zugeordnet

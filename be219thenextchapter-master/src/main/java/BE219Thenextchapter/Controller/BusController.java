@@ -19,9 +19,11 @@ public interface BusController {
     @PostMapping
     BusDTO addBus(@RequestBody BusDTO busDTO); // erwartet ein DTO im BOdy bereich der Abfrage
 
+    //TODO fehlt noch
     //Update
     @PutMapping
-    BusDTO updateBus(@RequestBody BusDTO busDTO); //macht ja das gleiche siehe Service
+    BusDTO updateBus(@RequestBody BusDTO busDTO,
+                     @PathVariable("busId") Long busId); //macht ja das gleiche siehe Service
 
     //Delete
     @DeleteMapping("/{busId}")

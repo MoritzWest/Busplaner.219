@@ -9,6 +9,7 @@ import java.util.List;
 public interface BusService {
     //Read
     List<BusDTO> getAll();
+
     BusDTO getBusById(long id);
 
     //Create

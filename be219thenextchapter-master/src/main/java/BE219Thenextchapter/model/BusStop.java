@@ -15,7 +15,7 @@ import java.util.List;
 @Entity
 public class BusStop {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String street;
 

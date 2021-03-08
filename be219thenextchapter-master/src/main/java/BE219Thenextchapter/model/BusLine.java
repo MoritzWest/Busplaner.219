@@ -17,7 +17,7 @@ public class BusLine {
     // Liste Haltestellen, Liste Busse, Taktfrequenz, Fahrplan
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long busLineId;
     private int busLineNumber;
     private int frequency;

@@ -13,7 +13,7 @@ import java.util.List;
 @Entity
 public class Bus {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     //Ein Bus kann mehrere Buslinien fahren / besitzt mehrere Fahrpläne

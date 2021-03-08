@@ -14,7 +14,7 @@ import java.time.LocalTime;
 public class ArrivingTime {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private LocalTime arrivingTime;
 

@@ -1,23 +1,25 @@
 package BE219Thenextchapter.Controller;
 
 import BE219Thenextchapter.dto.BusLineDTO;
+import BE219Thenextchapter.dto.BusPlanDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 public interface BusPlanController {
 
+    //TODO
     @GetMapping
-    List<BusLineDTO> getAllBusLines();
+    List<BusPlanDTO> getAllBusPlans();
 
     @GetMapping("/{BusLinesId")
-    BusLineDTO getBusLineById(@PathVariable("busLineId") long busLineId);
+    BusPlanDTO getBusLineById(@PathVariable("busLineId") long busLineId);
 
-    //@PostMapping
-    //BusScheduleDTO addBusLine(@RequestBody BusLineDTO busLineDTO);
+    @PostMapping
+    BusPlanDTO addBusLine(@RequestBody BusPlanDTO BusPlanDTO);
 
     @PutMapping
-    BusLineDTO updateBusLine(@RequestBody BusLineDTO busLineDTO);
+    BusPlanDTO updateBusLine(@RequestBody BusPlanDTO BusPlanDTO);
 
     @DeleteMapping("/{BusLineId")
     void removeBusLineById(@PathVariable("busLineId") long busLineId);
