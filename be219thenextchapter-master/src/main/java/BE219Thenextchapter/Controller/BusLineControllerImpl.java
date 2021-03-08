@@ -93,10 +93,10 @@ public class BusLineControllerImpl implements BusLineController {
     }
 
     @Override
-    @Operation(summary = "Updates certain busLine.", description = "This operation " +
-            "updates data of a certain busLine corresponding to an ID.")
+    @Operation(summary = "Deletes certain busLine.", description = "This operation " +
+            "deletes data of a certain busLine corresponding to an ID.")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "BusLine returned successfully"),
+            @ApiResponse(responseCode = "200", description = "BusLine successfully deleted"),
             @ApiResponse(responseCode = "404", description = "Given busLineId does not exist"),
             @ApiResponse(responseCode = "500", description = "An error occurred during processing")
     })

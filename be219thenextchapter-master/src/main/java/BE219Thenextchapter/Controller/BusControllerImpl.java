@@ -83,10 +83,10 @@ public class BusControllerImpl implements BusController {
 
     //Delete
     @Override
-    @Operation(summary = "Updates certain Bus.", description = "This operation " +
-            "updates data of a certain Bus corresponding to an ID.")
+    @Operation(summary = "Deletes certain Bus.", description = "This operation " +
+            "deletes data of a certain Bus corresponding to an ID.")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "200", description = "Bus returned successfully"),
+            @ApiResponse(responseCode = "200", description = "Bus successfully deleted"),
             @ApiResponse(responseCode = "404", description = "Given BusId does not exist"),
             @ApiResponse(responseCode = "500", description = "An error occurred during processing")
     })
