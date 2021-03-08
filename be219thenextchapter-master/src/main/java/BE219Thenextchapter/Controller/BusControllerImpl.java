@@ -19,7 +19,7 @@ public class BusControllerImpl implements BusController {
 
     private BusService busService;
 
-    //Konstruktor
+
     public BusControllerImpl(BusService busService) {
         setBusService(busService);
     }
