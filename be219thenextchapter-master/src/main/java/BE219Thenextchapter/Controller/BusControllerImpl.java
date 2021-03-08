@@ -46,6 +46,7 @@ public class BusControllerImpl implements BusController {
     @PutMapping("/{busId}")
     public BusDTO updateBus(@Valid @RequestBody BusDTO busDTO,
                             @PathVariable("busId") Long busId) {
+        busDTO.setId(busId);
         return this.busService.updateBus(busDTO);
     }
 

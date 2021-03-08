@@ -10,7 +10,7 @@ import java.util.List;
 
 @Repository
 public interface BusRepository extends JpaRepository<Bus, Long> {
-    //Bus findBusById(long id);
+    Bus findById(long id);
 
     //JPQL Abfrage: Bei Eingabe einer konkreten BusId werden alle Buslinien zurückgegeben (welche der Bus an dem Tag bedient? -alle?
     // fehlt: Ankunftszeit an der ersten Haltestelle der entsprechenden Buslinie

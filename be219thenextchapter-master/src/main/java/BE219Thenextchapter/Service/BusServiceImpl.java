@@ -33,7 +33,7 @@ public class BusServiceImpl implements BusService{
     //Read by id
     @Override
     public BusDTO getBusById(long id) {
-        Bus bus = this.busRepository.findById(id).get(); //holt busRoute Objekt aus der DB anhand der ID
+        Bus bus = this.busRepository.findById(id); //holt busRoute Objekt aus der DB anhand der ID
         BusDTO busDTO = this.busMapper.busToBusDTO(bus); // wandelt es in DTO um
         return busDTO;
     }
